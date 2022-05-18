@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">좀 그럴듯한 앱</string>
+    <string name="strBtn1">글자 나타내기</string>
+    <string name="strBtn2">홈페이지 열기</string>
+    <string name="_12_0_s">12.0(S)</string>
+    <string name="_11_0_r">11.0(R)</string>
+    <string name="text_input">여기에 채우세요</string>
+</resources>

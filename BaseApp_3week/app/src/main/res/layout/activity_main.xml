@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--/********************************************************-->
+<!--*프로그램명: activity-main.xml-->
+<!--*작성자: 2020069049 이진희-->
+<!--*작성일: 2022.03.07-->
+<!--*프로그램 설명: 예제 2-7 좀 그럴듯한 앱 만들어보기-->
+<!--*********************************************************/-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="5dp"
+        android:hint="@string/text_input"
+        android:textColorHint="#757575"
+        android:autofillHints=""/>
+
+ <!--누르면 토스트가 뜨는 버튼-->
+    <Button
+        android:layout_margin="5dp"
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/strBtn1"></Button>
+
+    <!--누르면 네이트로 이동하는 버튼-->
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="@string/strBtn2"></Button>
+
+    <!-- 라디오 그룹 지정 -->
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/radioGroup">
+
+        <!-- 처음에 br1이 눌러져 있도록 세팅 -->
+        <RadioButton
+            android:id="@+id/br1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="20dp"
+            android:checked="true"
+            android:minHeight="20dp"
+            android:text="@string/_11_0_r"/>
+
+        <RadioButton
+            android:id="@+id/br2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="160dp"
+            android:layout_alignBaseline="@id/br1"
+            android:layout_alignBottom="@id/br1"
+            android:layout_alignParentEnd="true"
+            android:checked="false"
+            android:minHeight="20dp"
+            android:text="@string/_12_0_s"/>
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_below="@id/radioGroup"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/android1" />
+
+
+</LinearLayout>

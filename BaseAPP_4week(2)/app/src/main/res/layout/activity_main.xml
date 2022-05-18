@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--/********************************************************-->
+<!--*프로그램명: activity-main.xml-->
+<!--*작성자: 2020069049 이진희-->
+<!--*작성일: 2022.04.02-->
+<!--*프로그램 설명: 예제 4-8 에디터 텍스트 키 누름 여부에 따른 토스 메세지 설정-->
+<!--*********************************************************/-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText1" />
+
+</LinearLayout>

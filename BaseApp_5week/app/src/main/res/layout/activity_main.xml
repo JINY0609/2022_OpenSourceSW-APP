@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--/********************************************************-->
+<!--*프로그램명: activity-main.xml-->
+<!--*작성자: 2020069049 이진희-->
+<!--*작성일: 2022.04.09-->
+<!--*프로그램 설명: 그리드 레이아웃을 이용한 계산기를 만들어보기-->
+<!--*********************************************************/-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/edit1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:inputType="number"
+        android:layout_margin="7dp"
+        android:hint="@string/text_input1"
+        android:minHeight="48dp"></EditText>
+
+    <EditText
+        android:id="@+id/edit2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:textStyle="bold"
+        android:layout_margin="7dp"
+        android:hint="@string/text_input2"
+        android:minHeight="48dp"></EditText>
+
+    <GridLayout
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:columnCount="5"
+        android:rowCount="2">
+
+           <Button
+               android:id="@+id/bum1"
+               android:layout_width="80dp"
+               android:layout_height="wrap_content"
+               android:textStyle="bold"
+               android:layout_weight="1"
+               android:text="0" />
+
+           <Button
+               android:id="@+id/bum2"
+               android:layout_width="80dp"
+               android:layout_height="wrap_content"
+               android:textStyle="bold"
+               android:text="1"
+               android:layout_weight="1"/>
+
+           <Button
+               android:id="@+id/bum3"
+               android:layout_width="80dp"
+               android:layout_height="wrap_content"
+               android:textStyle="bold"
+               android:text="2"
+               android:layout_weight="1"/>
+
+           <Button
+               android:id="@+id/bum4"
+               android:layout_width="80dp"
+               android:layout_height="wrap_content"
+               android:textStyle="bold"
+               android:text="3"
+               android:layout_weight="1"/>
+
+           <Button
+               android:id="@+id/bum5"
+               android:layout_width="80dp"
+               android:layout_height="wrap_content"
+               android:textStyle="bold"
+               android:text="4"
+               android:layout_weight="1"/>
+
+
+            <Button
+                android:id="@+id/bum6"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/bum7"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="6"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/bum8"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="7"
+                android:layout_weight="1"/>
+
+
+            <Button
+                android:id="@+id/bum9"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="8"
+                android:layout_weight="1"/>
+
+
+            <Button
+                android:id="@+id/bum10"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="9"
+                android:layout_weight="1"/>
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:background="#F40000"
+        android:textStyle="bold"
+        android:text="더하기" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F35602"
+        android:layout_margin="7dp"
+        android:textStyle="bold"
+        android:text="뺴기" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:textStyle="bold"
+        android:background="#ECC948"
+        android:text="곱하기" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:textStyle="bold"
+        android:background="#54DD35"
+        android:text="나누기" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:textStyle="bold"
+        android:background="#2141E4"
+        android:text="나머지 값" />
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:text="계산결과:"
+        android:textStyle="bold"
+        android:textColor="#780808"
+        android:textSize="28sp" />
+
+
+</LinearLayout>

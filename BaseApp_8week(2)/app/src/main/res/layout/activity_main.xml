@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--/********************************************************-->
+<!--*프로그램명: activity-main.xml-->
+<!--*작성자: 2020069049 이진희-->
+<!--*작성일: 2022.05.01-->
+<!--*프로그램 설명: 미니 포토샵 앱 만들기-->
+<!--*********************************************************/-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/iconLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1">
+
+        <ImageButton
+            android:id="@+id/ibZoomout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_zoom_out_24" />
+
+        <ImageButton
+            android:id="@+id/ibZoomin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_zoom_in_24" />
+
+        <ImageButton
+            android:id="@+id/ibRotate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_rotate_left_24" />
+
+        <ImageButton
+            android:id="@+id/ibBright"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_brightness_5_24" />
+
+        <ImageButton
+            android:id="@+id/ibDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_brightness_4_24" />
+
+        <ImageButton
+            android:id="@+id/ibGray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_grade_24" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/pictureLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="9"
+        android:layout_gravity="center">
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+

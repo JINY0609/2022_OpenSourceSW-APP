@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--/********************************************************-->
+<!--*프로그램명: activity-main.xml-->
+<!--*작성자: 2020069049 이진희-->
+<!--*작성일: 2022.04.02-->
+<!--*프로그램 설명: 예제 4-7 체크박스 선택에 따른 버튼 속성 설정-->
+<!--*********************************************************/-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:text="Enabled 속성" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:text="Clickable 속성" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:text="45도 회전" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="356dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="30dp"
+        android:clickable="false"
+        android:enabled="false"
+        android:text="Button" />
+
+</LinearLayout>

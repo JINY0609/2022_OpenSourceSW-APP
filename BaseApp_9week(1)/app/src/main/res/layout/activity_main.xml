@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--/********************************************************-->
+<!--*프로그램명: activity-main.xml-->
+<!--*작성자: 2020069049 이진희-->
+<!--*작성일: 2022.05.07-->
+<!--*프로그램 설명: 영화 선호도 투표앱 만들기-->
+<!--*********************************************************/-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/iv1"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_baseline_rotate_left_24" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/iv2"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_baseline_brightness_5_24" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/iv3"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_baseline_zoom_out_24" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/iv4"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_baseline_zoom_in_24" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/iv5"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_baseline_brightness_4_24" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/iv6"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_baseline_grade_24" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/iv7"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:src="@drawable/flower" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/iv8"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:src="@drawable/android1" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/iv9"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:src="@drawable/android2" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnResult"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="투표종료" />
+</LinearLayout>
+
+
+
+
